@@ -1,0 +1,72 @@
+{
+
+  "Circular Logic Widget": {
+    "NAME": "Circular Logic Widget",
+    "FLAVOR": "George is going insane.",
+    "DESCRIPTIONS": [
+      "When obtained, gained bird faced urn and mummfied hand.  Start each combat with master reality, creative ai, and storm"
+    ]
+  },
+
+  "Clerics Golden Helm": {
+    "NAME": "Cleric's Golden Helm",
+    "FLAVOR": "It's very shiny, that's how you know its important. suggested by Galvior.",
+    "DESCRIPTIONS": [
+      "Whenever you add a card to your deck, heal #b",
+      " HP."
+    ]
+  },
+
+  "Fresh Water": {
+    "NAME": "Fresh Water",
+    "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
+    "DESCRIPTIONS": [
+      "Upon pickup, heal #b",
+      " HP."
+    ]
+  },
+
+  "PrismaticBranch": {
+    "NAME": "Prismatic Branch",
+    "FLAVOR": "For the spiciest of cheese.",
+    "DESCRIPTIONS": [
+      "Whenever you Exhaust a card, add a random card to your hand; no restrictions.  Start Each Battle With Corruption and Master of Reality powers."
+    ]
+  },
+
+  "Sail": {
+    "NAME": "Ship's Sail",
+    "FLAVOR": "Catches the wind. suggested by bobjoejuan.",
+    "DESCRIPTIONS": [
+      "At the start of your 4th turn, gain #b",
+      " #yBlock."
+    ]
+  },
+
+
+  "Snecko Skin Boots": {
+    "NAME": "Snecko Skin Boots",
+    "FLAVOR": "Poor confusing creature, now losing its skin. suggested by coledot_.",
+    "DESCRIPTIONS": [
+      "At the start of each turn +2 str, +2 Dex, -1 str, or -1 Dex, chosen at random"
+    ]
+  },
+
+  "Paper Bomb": {
+    "NAME": "Paper Bomb",
+    "FLAVOR": "It goes boom. Recommended by Galvior.",
+    "DESCRIPTIONS": [
+      "Every time you play #b",
+      " #yAttacks in a single turn, deal #b",
+      " Damage to all enemies."
+    ]
+  },
+
+  "Cheesy Fridge": {
+    "NAME": "Cheesy Fridge",
+    "FLAVOR": "all the food!!!!.",
+    "DESCRIPTIONS": [
+      "because pickled rick was taken."
+    ]
+  }
+}

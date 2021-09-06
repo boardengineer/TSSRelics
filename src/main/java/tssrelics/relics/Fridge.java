@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package tssrelics;
+package tssrelics.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
