@@ -1,5 +1,4 @@
 {
-
   "Circular Logic Widget": {
     "NAME": "Circular Logic Widget",
     "FLAVOR": "George is going insane.",
@@ -7,7 +6,6 @@
       "When obtained, gained bird faced urn and mummfied hand.  Start each combat with master reality, creative ai, and storm"
     ]
   },
-
   "Clerics Golden Helm": {
     "NAME": "Cleric's Golden Helm",
     "FLAVOR": "It's very shiny, that's how you know its important. suggested by Galvior.",
@@ -16,7 +14,6 @@
       " HP."
     ]
   },
-
   "Fresh Water": {
     "NAME": "Fresh Water",
     "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
@@ -25,7 +22,6 @@
       " HP."
     ]
   },
-
   "PrismaticBranch": {
     "NAME": "Prismatic Branch",
     "FLAVOR": "For the spiciest of cheese.",
@@ -33,7 +29,6 @@
       "Whenever you Exhaust a card, add a random card to your hand; no restrictions.  Start Each Battle With Corruption and Master of Reality powers."
     ]
   },
-
   "Sail": {
     "NAME": "Ship's Sail",
     "FLAVOR": "Catches the wind. suggested by bobjoejuan.",
@@ -42,8 +37,6 @@
       " #yBlock."
     ]
   },
-
-
   "Snecko Skin Boots": {
     "NAME": "Snecko Skin Boots",
     "FLAVOR": "Poor confusing creature, now losing its skin. suggested by coledot_.",
@@ -51,7 +44,6 @@
       "At the start of each turn +2 str, +2 Dex, -1 str, or -1 Dex, chosen at random"
     ]
   },
-
   "Paper Bomb": {
     "NAME": "Paper Bomb",
     "FLAVOR": "It goes boom. Recommended by Galvior.",
@@ -61,12 +53,53 @@
       " Damage to all enemies."
     ]
   },
-
   "Cheesy Fridge": {
     "NAME": "Cheesy Fridge",
     "FLAVOR": "all the food!!!!.",
     "DESCRIPTIONS": [
       "because pickled rick was taken."
+    ]
+  },
+  "Noxious Stone": {
+    "NAME": "Noxious Stone",
+    "FLAVOR": "It certainly doesn't smell great!!!!.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain 2 envenom and each monster gains 1 Strength."
+    ]
+  },
+  "Achilles Heel Guard": {
+    "NAME": "Achilles Heel Guard",
+    "FLAVOR": "it's fragile, don't let it crack.",
+    "DESCRIPTIONS": [
+      "Start each turn with 1 extra mana.  No longer gain this mana if you've taken damage this turn."
+    ]
+  },
+  "Runic Replicator": {
+    "NAME": "Runic Replicator",
+    "FLAVOR": "A lot of things are great when they're free.",
+    "DESCRIPTIONS": [
+      "At start of combat, choose a card. Add a copy of that card to your hand, it costs 0 this turn"
+    ]
+  },
+  "Solid State Drive": {
+    "NAME": "Solid State Drive",
+    "FLAVOR": "Throw some balls for the gains.",
+    "DESCRIPTIONS": [
+      "Whenever you evoke an orb, gain 1 strength."
+    ]
+  },
+  "Snecko Charm": {
+    "NAME": "Snecko Charm",
+    "FLAVOR": "Well, good luck...",
+    "DESCRIPTIONS": [
+      "? rooms can now contain elites or rest rooms."
+    ]
+  },
+  "Relic Compass": {
+    "NAME": "Relic Compass",
+    "FLAVOR": "All the elites are on fire? everything is fine",
+    "DESCRIPTIONS": [
+      "at the beginning of each turn, gain 1 energy.  All elites gain an [additional] emeralid debuff."
     ]
   }
 }

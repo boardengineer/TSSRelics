@@ -25,7 +25,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class PrismaticBranch extends CustomRelic {
-    private static final Texture IMAGE = new Texture("img/PrismaticBranch.png");
+    private static final Texture IMAGE = new Texture("img/prismaticbranch.png");
 
     public static CardGroup commonCardPool;
     public static CardGroup uncommonCardPool;

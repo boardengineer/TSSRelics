@@ -28,7 +28,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import java.util.HashSet;
 
 public class Fridge extends CustomRelic {
-    private static final Texture IMAGE = new Texture("img/PrismaticBranch.png");
+    private static final Texture IMAGE = new Texture("img/prismaticbranch.png");
 
     public static final String ID = "Cheesy Fridge";
     private boolean cardsReceived = true;
