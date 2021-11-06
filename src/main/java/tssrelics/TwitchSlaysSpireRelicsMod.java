@@ -38,6 +38,12 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         BaseMod.addRelic(new SolidStateDrive().makeCopy(), RelicType.BLUE);
         BaseMod.addRelic(new SneckoCharm().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCompass().makeCopy(), RelicType.SHARED);
+
+        BaseMod.addRelic(new FillformNeedle().makeCopy(), RelicType.PURPLE);
+//        BaseMod.addRelic(new HotwiredCables().makeCopy(), RelicType.BLUE);
+        BaseMod.addRelic(new ScalesOfJustice().makeCopy(), RelicType.PURPLE);
+        BaseMod.addRelic(new TacticalHarness().makeCopy(), RelicType.GREEN);
+        BaseMod.addRelic(new VampireFang().makeCopy(), RelicType.RED);
     }
 
     @Override

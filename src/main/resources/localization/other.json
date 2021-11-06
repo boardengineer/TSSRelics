@@ -95,11 +95,46 @@
       "? rooms can now contain elites or rest rooms."
     ]
   },
+  "Fillform Needle": {
+    "NAME": "Fillform Needle",
+    "FLAVOR": "Well, good luck...",
+    "DESCRIPTIONS": [
+      "At the start of each turn, apply 1 Mark to all enemies. ALL enemies lose HP equal to their mark."
+    ]
+  },
   "Relic Compass": {
     "NAME": "Relic Compass",
     "FLAVOR": "All the elites are on fire? everything is fine",
     "DESCRIPTIONS": [
-      "at the beginning of each turn, gain 1 energy.  All elites gain an [additional] emeralid debuff."
+      "at the beginning of each turn, gain 1 energy.  All elites gain an [additional] emerald buff."
+    ]
+  },
+  "Hotwired Cables": {
+    "NAME": "Hotwired Cables",
+    "FLAVOR": "so hawt",
+    "DESCRIPTIONS": [
+      "When an orb is channeled, it is immediately evoked."
+    ]
+  },
+  "Scales of Justice": {
+    "NAME": "Scales of Justice",
+    "FLAVOR": "so hawt",
+    "DESCRIPTIONS": [
+      "If the turn is started in wrath, draw 2 cards. If the turn is ended in Calm, retain up to 2 cards."
+    ]
+  },
+  "Tactical Harness": {
+    "NAME": "Tactical Harness",
+    "FLAVOR": "so hawt",
+    "DESCRIPTIONS": [
+      "Whenever a card or power would add shivs to the hand, create 1 additional shiv"
+    ]
+  },
+  "Vampire Fang": {
+    "NAME": "Vampire Fang",
+    "FLAVOR": "so hawt",
+    "DESCRIPTIONS": [
+      "Whenever unblocked damage is dealt, heal 1 HP."
     ]
   }
 }
