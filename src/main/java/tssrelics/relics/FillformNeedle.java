@@ -11,12 +11,11 @@ import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.watcher.TriggerMarksAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class FillformNeedle extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/spearHead.png");
+    private static final Texture IMAGE = new Texture("img/filiformneedles.png");
     public static final String ID = "Fillform Needle";
 
     public FillformNeedle() {

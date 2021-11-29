@@ -6,13 +6,12 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 import com.megacrit.cardcrawl.stances.CalmStance;
 import com.megacrit.cardcrawl.stances.WrathStance;
 
 public class ScalesOfJustice extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/monocle.png");
+    private static final Texture IMAGE = new Texture("img/scales.png");
     public static final String ID = "Scales of Justice";
 
     public ScalesOfJustice() {

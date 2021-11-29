@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.unique.IncreaseMaxHpAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 import com.megacrit.cardcrawl.powers.RegenerateMonsterPower;
@@ -19,7 +18,7 @@ import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 import java.util.ArrayList;
 
 public class RelicCompass extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/derpRock.png");
+    private static final Texture IMAGE = new Texture("img/compass.png");
     public static final String ID = "Relic Compass";
 
     public RelicCompass() {

@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 import com.megacrit.cardcrawl.rooms.RestRoom;
 
 public class SneckoCharm extends CustomRelic {
-    private static final Texture IMAGE = new Texture("img/blackhole.png");
+    private static final Texture IMAGE = new Texture("img/sneckocharm.png");
     public static final String ID = "Snecko Charm";
 
     public SneckoCharm() {

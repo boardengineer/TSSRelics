@@ -15,7 +15,7 @@ public class PaperBomb extends CustomRelic {
     private static final Texture IMAGE = new Texture("img/paperbomb.png");
     public static final String ID = "Paper Bomb";
 
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 4;
     private static final int NUM_CARDS = 3;
 
     public PaperBomb() {
@@ -51,5 +51,10 @@ public class PaperBomb extends CustomRelic {
     @Override
     public void atTurnStart() {
         this.counter = 0;
+    }
+
+    @Override
+    public void onVictory() {
+        this.counter = -1;
     }
 }

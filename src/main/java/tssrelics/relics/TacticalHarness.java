@@ -8,11 +8,10 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class TacticalHarness extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test4.png");
+    private static final Texture IMAGE = new Texture("img/tacticalharness.png");
     public static final String ID = "Tactical Harness";
 
     public TacticalHarness() {

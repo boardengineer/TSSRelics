@@ -71,7 +71,7 @@
     "NAME": "Achilles Heel Guard",
     "FLAVOR": "it's fragile, don't let it crack.",
     "DESCRIPTIONS": [
-      "Start each turn with 1 extra mana.  No longer gain this mana if you've taken damage this turn."
+      "Start each turn with 1 extra mana.  No longer gain this mana if you've taken damage this battle."
     ]
   },
   "Runic Replicator": {

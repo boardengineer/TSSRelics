@@ -8,12 +8,11 @@ import com.megacrit.cardcrawl.actions.defect.AnimateOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class HotwiredCables extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/runicSphere.png");
+    private static final Texture IMAGE = new Texture("img/hotwirecables.png");
     public static final String ID = "Hotwired Cables";
 
     public HotwiredCables() {
