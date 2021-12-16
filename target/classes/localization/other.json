@@ -1,4 +1,11 @@
 {
+  "Business Contract": {
+    "NAME": "Business Contract",
+    "FLAVOR": "Gotta read the fine print.",
+    "DESCRIPTIONS": [
+      "The Merchant's removal service can be used any number of times."
+    ]
+  },
   "Circular Logic Widget": {
     "NAME": "Circular Logic Widget",
     "FLAVOR": "George is going insane.",
@@ -14,12 +21,26 @@
       " HP."
     ]
   },
+  "Dice Of Fate": {
+    "NAME": "Dice Of Fate",
+    "FLAVOR": "roll them bones.",
+    "DESCRIPTIONS": [
+      "You can reroll once per shop"
+    ]
+  },
   "Fresh Water": {
     "NAME": "Fresh Water",
     "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
     "DESCRIPTIONS": [
       "Upon pickup, heal #b",
       " HP."
+    ]
+  },
+  "Happy Flower Bed": {
+    "NAME": "Happy Flower Bed",
+    "FLAVOR": "They all just keep on smiling.",
+    "DESCRIPTIONS": [
+      "You can now plant happy flowers at rest sites, counters will stagger"
     ]
   },
   "PrismaticBranch": {
@@ -51,6 +72,13 @@
       "Every time you play #b",
       " #yAttacks in a single turn, deal #b",
       " Damage to all enemies."
+    ]
+  },
+  "Preserved Amber": {
+    "NAME": "Preserved Amber",
+    "FLAVOR": "Poor bug never saw it coming.",
+    "DESCRIPTIONS": [
+      "All elites start Combat with -2 Strength."
     ]
   },
   "Cheesy Fridge": {
@@ -135,6 +163,13 @@
     "FLAVOR": "so hawt",
     "DESCRIPTIONS": [
       "Whenever unblocked damage is dealt, heal 1 HP."
+    ]
+  },
+  "Yin": {
+    "NAME": "Yin",
+    "FLAVOR": "needed for true duality",
+    "DESCRIPTIONS": [
+      "Whenever you play a skill, gain one strength."
     ]
   }
 }
