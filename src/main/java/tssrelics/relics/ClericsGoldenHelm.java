@@ -10,7 +10,7 @@ public class ClericsGoldenHelm extends CustomRelic {
     private static final Texture IMAGE = new Texture("img/helmet.png");
     public static final String ID = "Clerics Golden Helm";
 
-    private static final int HEAL_AMOUNT = 8;
+    private static final int HEAL_AMOUNT = 5;
 
     public ClericsGoldenHelm() {
         super(ID, IMAGE, RelicTier.UNCOMMON, LandingSound.HEAVY);

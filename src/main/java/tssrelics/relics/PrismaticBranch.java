@@ -2,23 +2,16 @@ package tssrelics.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.green.Eviscerate;
-import com.megacrit.cardcrawl.cards.red.Feed;
-import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.powers.CorruptionPower;
 import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.ui.buttons.SingingBowlButton;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -55,13 +48,6 @@ public class PrismaticBranch extends CustomRelic {
     public void atBattleStart() {
         this.grayscale = false;
         this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MasterRealityPower(AbstractDungeon.player), 1, true));
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new CorruptionPower(AbstractDungeon.player), 1, true));
-        this.addToBot(new MakeTempCardInDrawPileAction(new Feed(), 2, true, true));
-    }
-
-    @Override
-    public void atTurnStart() {
-        this.addToBot(new MakeTempCardInHandAction(new Dazed(), 1, false));
     }
 
     public String getUpdatedDescription() {
@@ -157,14 +143,4 @@ public class PrismaticBranch extends CustomRelic {
     public static HashSet<String> ILLEGAL_CARD_IDS = new HashSet<String>() {{
         add(Eviscerate.ID);
     }};
-
-    @SpirePatch(clz = SingingBowlButton.class, method = "onClick")
-    public static class SingHarderPatch {
-        @SpirePostfixPatch
-        public static void healMore(SingingBowlButton button) {
-            if (AbstractDungeon.player.hasRelic(ID)) {
-                AbstractDungeon.player.increaseMaxHp(3, true);
-            }
-        }
-    }
 }

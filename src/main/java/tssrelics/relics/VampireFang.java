@@ -3,8 +3,8 @@ package tssrelics.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
@@ -27,9 +27,9 @@ public class VampireFang extends CustomRelic {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && info.type == DamageInfo.DamageType.NORMAL) {
-            this.addToTop(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1, 0.0F));
+    public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
+        if (targetCard.hasTag(AbstractCard.CardTags.STRIKE)) {
+            addToTop(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1, 0.0F));
         }
     }
 }

@@ -39,7 +39,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         BaseMod.addRelic(new SneckoCharm().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCompass().makeCopy(), RelicType.SHARED);
 
-        BaseMod.addRelic(new FillformNeedle().makeCopy(), RelicType.PURPLE);
+        BaseMod.addRelic(new FiliformNeedle().makeCopy(), RelicType.PURPLE);
 //        BaseMod.addRelic(new HotwiredCables().makeCopy(), RelicType.BLUE);
 //        BaseMod.addRelic(new ScalesOfJustice().makeCopy(), RelicType.PURPLE);
         BaseMod.addRelic(new TacticalHarness().makeCopy(), RelicType.GREEN);
@@ -50,6 +50,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         BaseMod.addRelic(new DiceOfFate().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new Yin().makeCopy(), RelicType.PURPLE);
         BaseMod.addRelic(new HappyFlowerBed().makeCopy(), RelicType.SHARED);
+        BaseMod.addRelic(new FestivuePole().makeCopy(), RelicType.SHARED);
     }
 
     @Override

@@ -28,6 +28,13 @@
       "You can reroll once per shop"
     ]
   },
+  "Festivus Pole": {
+    "NAME": "Festivus Pole",
+    "FLAVOR": "Great strength to weight ratio.",
+    "DESCRIPTIONS": [
+      "You can now transform + upgrade a card at rest sites."
+    ]
+  },
   "Fresh Water": {
     "NAME": "Fresh Water",
     "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
@@ -99,7 +106,7 @@
     "NAME": "Achilles Heel Guard",
     "FLAVOR": "it's fragile, don't let it crack.",
     "DESCRIPTIONS": [
-      "Start each turn with 1 extra mana.  No longer gain this mana if you've taken damage this battle."
+      "Start each turn with 1 extra energy.  No longer gain this energy if you've taken damage this battle."
     ]
   },
   "Runic Replicator": {
@@ -123,8 +130,8 @@
       "? rooms can now contain elites or rest rooms."
     ]
   },
-  "Fillform Needle": {
-    "NAME": "Fillform Needle",
+  "Filiform Needle": {
+    "NAME": "Filiform Needle",
     "FLAVOR": "Well, good luck...",
     "DESCRIPTIONS": [
       "At the start of each turn, apply 1 Mark to all enemies. ALL enemies lose HP equal to their mark."
@@ -162,7 +169,7 @@
     "NAME": "Vampire Fang",
     "FLAVOR": "so hawt",
     "DESCRIPTIONS": [
-      "Whenever unblocked damage is dealt, heal 1 HP."
+      "Whenever you play a strike, heal 1 HP."
     ]
   },
   "Yin": {

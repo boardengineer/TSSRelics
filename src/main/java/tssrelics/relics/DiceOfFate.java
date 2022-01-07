@@ -32,7 +32,13 @@ public class DiceOfFate extends CustomRelic {
     public static RerollStoreChoice rerollChoice = new RerollStoreChoice();
 
     public DiceOfFate() {
-        super(ID, IMAGE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMAGE, RelicTier.SHOP, LandingSound.SOLID);
+        cost = 75;
+    }
+
+    @Override
+    public int getPrice() {
+        return 75;
     }
 
     @Override

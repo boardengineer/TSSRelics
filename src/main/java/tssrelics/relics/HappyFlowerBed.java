@@ -22,6 +22,7 @@ import java.util.ArrayList;
 public class HappyFlowerBed extends CustomRelic {
     private static final Texture IMAGE = ImageMaster.loadImage("images/relics/livingBlood.png");
     public static final String ID = "Happy Flower Bed";
+    private boolean initialFlowersReceived = true;
 
     public HappyFlowerBed() {
         super(ID, IMAGE, RelicTier.BOSS, LandingSound.SOLID);
@@ -70,26 +71,7 @@ public class HappyFlowerBed extends CustomRelic {
             this.updateBlackScreenColor();
             if (this.duration < 1.0F && !this.hasPlanted) {
                 this.hasPlanted = true;
-                AbstractRelic flower = new HappyFlower().makeCopy();
-
-                long min = 1000;
-                int best = 0;
-                for (int counter = 0; counter < 3; counter++) {
-                    final int compareCounter = counter;
-
-                    long numFlowers = AbstractDungeon.player.relics.stream()
-                                                                   .filter(relic -> relic.relicId
-                                                                           .equals(HappyFlower.ID) && relic.counter == compareCounter)
-                                                                   .count();
-
-                    if (numFlowers < min) {
-                        min = numFlowers;
-                        best = counter;
-                    }
-                }
-
-                flower.instantObtain();
-                flower.counter = best;
+                obtainStaggeredHappyFlower();
 
                 AbstractDungeon.topLevelEffects
                         .add(new BorderFlashEffect(new Color(0.8F, 0.6F, 0.1F, 0.0F)));
@@ -122,5 +104,28 @@ public class HappyFlowerBed extends CustomRelic {
 
         public void dispose() {
         }
+    }
+
+    private static void obtainStaggeredHappyFlower() {
+        AbstractRelic flower = new HappyFlower().makeCopy();
+
+        long min = 1000;
+        int best = 0;
+        for (int counter = 0; counter < 3; counter++) {
+            final int compareCounter = counter;
+
+            long numFlowers = AbstractDungeon.player.relics.stream()
+                                                           .filter(relic -> relic.relicId
+                                                                   .equals(HappyFlower.ID) && relic.counter == compareCounter)
+                                                           .count();
+
+            if (numFlowers < min) {
+                min = numFlowers;
+                best = counter;
+            }
+        }
+
+        flower.instantObtain();
+        flower.counter = best;
     }
 }

@@ -14,11 +14,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-public class FillformNeedle extends CustomRelic {
+public class FiliformNeedle extends CustomRelic {
     private static final Texture IMAGE = new Texture("img/filiformneedles.png");
-    public static final String ID = "Fillform Needle";
+    public static final String ID = "Filiform Needle";
 
-    public FillformNeedle() {
+    public FiliformNeedle() {
         super(ID, IMAGE, RelicTier.UNCOMMON, LandingSound.HEAVY);
     }
 
@@ -32,7 +32,7 @@ public class FillformNeedle extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() {
-        return new FillformNeedle();
+        return new FiliformNeedle();
     }
 
     @Override
