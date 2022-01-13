@@ -6,11 +6,15 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.HappyFlower;
+import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
@@ -36,6 +40,38 @@ public class HappyFlowerBed extends CustomRelic {
     @Override
     public void addCampfireOption(ArrayList<AbstractCampfireOption> options) {
         options.add(new PlantOption());
+    }
+
+    @Override
+    public void onEquip() {
+        this.initialFlowersReceived = false;
+    }
+
+    @Override
+    public void update() {
+        super.update();
+        if (!this.initialFlowersReceived && !AbstractDungeon.isScreenUp) {
+
+            int numFlowers = AbstractDungeon.actNum;
+            if (AbstractDungeon.floorNum < 5) {
+                numFlowers = 0;
+            }
+
+            System.err.println("we should plant " + numFlowers);
+
+            if (numFlowers > 0) {
+                AbstractDungeon.combatRewardScreen.open();
+                AbstractDungeon.combatRewardScreen.rewards.clear();
+
+                for (int i = 0; i < numFlowers; i++) {
+                    AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(new HappyFlower()));
+                }
+
+                AbstractDungeon.combatRewardScreen.positionRewards();
+                AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0.25F;
+            }
+            this.initialFlowersReceived = true;
+        }
     }
 
     @Override
@@ -70,8 +106,9 @@ public class HappyFlowerBed extends CustomRelic {
             this.duration -= Gdx.graphics.getDeltaTime();
             this.updateBlackScreenColor();
             if (this.duration < 1.0F && !this.hasPlanted) {
+
                 this.hasPlanted = true;
-                obtainStaggeredHappyFlower();
+                new HappyFlower().instantObtain();
 
                 AbstractDungeon.topLevelEffects
                         .add(new BorderFlashEffect(new Color(0.8F, 0.6F, 0.1F, 0.0F)));
@@ -127,5 +164,31 @@ public class HappyFlowerBed extends CustomRelic {
 
         flower.instantObtain();
         flower.counter = best;
+    }
+
+    @SpirePatch(clz = HappyFlower.class, method = "onEquip")
+    public static class StaggedHappyFlowerOnEquipPatch {
+        @SpirePrefixPatch
+        public static SpireReturn<Void> staggerHappyFlower(HappyFlower happyFlower) {
+            long min = 1000;
+            int best = 0;
+            for (int counter = 0; counter < 3; counter++) {
+                final int compareCounter = counter;
+
+                long numFlowers = AbstractDungeon.player.relics.stream()
+                                                               .filter(relic -> relic.relicId
+                                                                       .equals(HappyFlower.ID) && relic.counter == compareCounter)
+                                                               .count();
+
+                if (numFlowers < min) {
+                    min = numFlowers;
+                    best = counter;
+                }
+            }
+
+            happyFlower.counter = best;
+
+            return SpireReturn.Return(null);
+        }
     }
 }
