@@ -5,12 +5,11 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class PreservedAmber extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/runicSphere.png");
+    private static final Texture IMAGE = new Texture("img/amber.png");
     public static final String ID = "Preserved Amber";
 
     public PreservedAmber() {

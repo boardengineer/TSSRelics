@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import java.util.ArrayList;
 
 public class HappyFlowerBed extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/livingBlood.png");
+    private static final Texture IMAGE = ImageMaster.loadImage("img/flowerbed.png");
     public static final String ID = "Happy Flower Bed";
     private boolean initialFlowersReceived = true;
 
@@ -83,7 +83,7 @@ public class HappyFlowerBed extends CustomRelic {
         public PlantOption() {
             this.label = "Plant";
             this.description = "Gain A Happy Flower";
-            this.img = ImageMaster.CAMPFIRE_DIG_BUTTON;
+            this.img = new Texture("img/plant.png");
         }
 
         public void useOption() {

@@ -26,8 +26,8 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class DiceOfFate extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test7.png");
-    public static final Texture REROLL_IMAGE = new Texture("loadstate.png");
+    private static final Texture IMAGE = ImageMaster.loadImage("img/dice.png");
+    public static final Texture REROLL_IMAGE = ImageMaster.loadImage("img/reroll.png");
     public static final String ID = "Dice Of Fate";
     public static RerollStoreChoice rerollChoice = new RerollStoreChoice();
 

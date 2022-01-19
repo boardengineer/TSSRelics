@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import java.util.ArrayList;
 
 public class FestivuePole extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/tungsten.png");
+    private static final Texture IMAGE = new Texture("img/pole.png");
     public static final String ID = "Festivus Pole";
 
     public FestivuePole() {
@@ -50,7 +50,7 @@ public class FestivuePole extends CustomRelic {
         public AirGrievancesOption() {
             this.label = "Air Grievances";
             this.description = "Have a lot of problems with some card? let it know!";
-            this.img = ImageMaster.CAMPFIRE_TOKE_BUTTON;
+            this.img = new Texture("img/grieve.png");
         }
 
         public void useOption() {

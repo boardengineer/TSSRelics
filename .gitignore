@@ -25,3 +25,12 @@ hs_err_pid*
 *.properties
 *.iml
 *.xml
+target/classes/img/robot.png
+target/classes/img/reroll.png
+target/classes/img/pole.png
+target/classes/img/plant.png
+target/classes/img/grieve.png
+target/classes/img/flowerbed.png
+target/classes/img/dice.png
+target/classes/img/contract.png
+target/classes/img/amber.png

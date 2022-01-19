@@ -50,6 +50,7 @@ public class SneckoCharm extends CustomRelic {
         @SpirePrefixPatch
         public static SpireReturn<AbstractRoom> rollBetter(AbstractDungeon dungeon, EventHelper.RoomResult roomResult) {
             if (roomResult == EventHelper.RoomResult.ELITE && AbstractDungeon.player.hasRelic(ID)) {
+                AbstractDungeon.player.getRelic(ID).flash();
                 return AbstractDungeon.eventRng.random(1) == 0 ? SpireReturn
                         .Return(new MonsterRoomElite()) : SpireReturn.Return(new RestRoom());
             }

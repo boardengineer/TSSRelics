@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.shop.ShopScreen;
 
 public class BusinessContract extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test6.png");
+    private static final Texture IMAGE = ImageMaster.loadImage("img/contract.png");
     public static final String ID = "Business Contract";
 
     public BusinessContract() {

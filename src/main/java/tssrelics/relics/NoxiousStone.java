@@ -5,8 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.NoxiousFumesPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.EchoPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class NoxiousStone extends CustomRelic {
@@ -22,15 +21,22 @@ public class NoxiousStone extends CustomRelic {
     }
 
     @Override
-    public void atTurnStart() {
-        flash();
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NoxiousFumesPower(AbstractDungeon.player, 2), 2));
-
-        AbstractDungeon.getMonsters().monsters.forEach(monster -> {
-            this.addToTop(new ApplyPowerAction(monster, monster, new StrengthPower(monster, 1), 1));
-        });
+    public void atBattleStart() {
+        this.flash();
+        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EchoPower(AbstractDungeon.player, 1), 1));
+        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
+
+    //    @Override
+//    public void atTurnStart() {
+//        flash();
+//        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+//        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NoxiousFumesPower(AbstractDungeon.player, 2), 2));
+//
+//        AbstractDungeon.getMonsters().monsters.forEach(monster -> {
+//            this.addToTop(new ApplyPowerAction(monster, monster, new StrengthPower(monster, 1), 1));
+//        });
+//    }
 
     @Override
     public AbstractRelic makeCopy() {
