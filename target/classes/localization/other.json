@@ -1,9 +1,23 @@
 {
+  "Blighted Snail": {
+    "NAME": "Blighted Snail",
+    "FLAVOR": "You get lost in those smooth curves.",
+    "DESCRIPTIONS": [
+      "Each turn deal fib(n) damage to all enemies."
+    ]
+  },
   "Business Contract": {
     "NAME": "Business Contract",
     "FLAVOR": "Gotta read the fine print.",
     "DESCRIPTIONS": [
       "The Merchant's removal service can be used any number of times."
+    ]
+  },
+  "Comic Book": {
+    "NAME": "Comic Book",
+    "FLAVOR": "It's collectible.",
+    "DESCRIPTIONS": [
+      "The First colorless card you play each battle is played twice."
     ]
   },
   "Circular Logic Widget": {
@@ -48,6 +62,20 @@
     "FLAVOR": "They all just keep on smiling.",
     "DESCRIPTIONS": [
       "You can now plant happy flowers at rest sites, counters will stagger"
+    ]
+  },
+  "Horn Of Plenty": {
+    "NAME": "Horn Of Plenty",
+    "FLAVOR": "The rich just keep getting richer.",
+    "DESCRIPTIONS": [
+      "The first rare card you play each combat is free"
+    ]
+  },
+  "Jade Mystic Knot": {
+    "NAME": "Jade Mystic Knot",
+    "FLAVOR": "Round and round and round it goes.",
+    "DESCRIPTIONS": [
+      "Whenever you obtain a relic, gain 2 Max HP."
     ]
   },
   "PrismaticBranch": {
@@ -177,6 +205,13 @@
     "FLAVOR": "needed for true duality",
     "DESCRIPTIONS": [
       "Whenever you play a skill, gain one strength."
+    ]
+  },
+  "Venomous Scales": {
+    "NAME": "Venomous Scales",
+    "FLAVOR": "eww, what's that smell?",
+    "DESCRIPTIONS": [
+      "When attacked, apply 2 poison to the attacked."
     ]
   }
 }
