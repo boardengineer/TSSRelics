@@ -89,14 +89,14 @@
     "NAME": "Jade Mystic Knot",
     "FLAVOR": "Round and round and round it goes.",
     "DESCRIPTIONS": [
-      "Whenever you obtain a relic, gain 2 Max HP."
+      "Whenever you obtain a relic, gain #b2 Max HP."
     ]
   },
   "Noxious Stone": {
     "NAME": "Noxious Stone",
     "FLAVOR": "It certainly doesn't smell great!!!!.",
     "DESCRIPTIONS": [
-      "At the start of each turn, gain 2 envenom and each monster gains 1 Strength."
+      "At the start of each turn, gain #b2 #yEnvenom and each monster gains #b1 #yStrength."
     ]
   },
   "PrismaticBranch": {
