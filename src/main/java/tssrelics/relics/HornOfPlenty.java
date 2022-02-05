@@ -44,7 +44,7 @@ public class HornOfPlenty extends CustomRelic {
         @SpirePrefixPatch
         public static SpireReturn<Boolean> freeToPlayCard(AbstractCard card) {
             AbstractPlayer player = AbstractDungeon.player;
-            if (player.hasRelic(ID) && !player.getRelic(ID).grayscale) {
+            if (player != null && player.hasRelic(ID) && !player.getRelic(ID).grayscale) {
                 boolean inHand = AbstractDungeon.player.hand.group.stream()
                                                                   .anyMatch(handCard -> handCard == card);
 
