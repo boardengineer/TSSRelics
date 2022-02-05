@@ -209,9 +209,9 @@
   },
   "Venomous Scales": {
     "NAME": "Venomous Scales",
-    "FLAVOR": "eww, what's that smell?",
+    "FLAVOR": "Eww, what's that smell?",
     "DESCRIPTIONS": [
-      "When attacked, apply 2 poison to the attacked."
+      "When attacked, apply #b2 #yPoison to the attacker."
     ]
   }
 }
