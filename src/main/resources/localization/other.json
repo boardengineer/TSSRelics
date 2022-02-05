@@ -197,7 +197,7 @@
     "NAME": "Vampire Fang",
     "FLAVOR": "Sure they're fake teeth but the monsters won't know the difference.",
     "DESCRIPTIONS": [
-      "Whenever you play a strike, heal 1 HP."
+      "Whenever you play a #yStrike, heal #b1 HP."
     ]
   },
   "Yin": {
