@@ -60,12 +60,12 @@
     "NAME": "Filiform Needle",
     "FLAVOR": "Don't worry, I'm a professional.",
     "DESCRIPTIONS": [
-      "At the start of each turn, apply 1 Mark to all enemies. ALL enemies lose HP equal to their mark."
+      "At the start of each turn, apply 1 #yMark to all enemies. ALL enemies lose HP equal to their #yMark."
     ]
   },
   "Fresh Water": {
     "NAME": "Fresh Water",
-    "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
+    "FLAVOR": "Always Hydrate Properly. Suggested by ezLo2.",
     "DESCRIPTIONS": [
       "Upon pickup, heal #b",
       " HP."
@@ -75,7 +75,7 @@
     "NAME": "Happy Flower Bed",
     "FLAVOR": "They all just keep on smiling.",
     "DESCRIPTIONS": [
-      "You can now plant happy flowers at rest sites, counters will stagger.  Upon pickup, obtain one happy flower per defeated boss."
+      "You can now plant #yHappy #yFlowers at rest sites, counters will stagger. NL Upon pickup, obtain one #yHappy #yFlower per defeated boss."
     ]
   },
   "Horn Of Plenty": {
