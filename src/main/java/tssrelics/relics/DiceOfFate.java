@@ -96,7 +96,7 @@ public class DiceOfFate extends CustomRelic {
     }
 
     // Patch Communication Mod to include the reroll option and process it when selected
-    @SpirePatch(clz = ChoiceScreenUtils.class, method = "getAvailableShopItems")
+    @SpirePatch(clz = ChoiceScreenUtils.class, method = "getAvailableShopItems", requiredModId = "CommunicationMod", optional = true)
     public static class GetAvailableShopItemsPatch {
         @SpirePrefixPatch
         public static SpireReturn<ArrayList<Object>> addReroll() {
@@ -104,7 +104,7 @@ public class DiceOfFate extends CustomRelic {
         }
     }
 
-    @SpirePatch(clz = ChoiceScreenUtils.class, method = "makeShopScreenChoice")
+    @SpirePatch(clz = ChoiceScreenUtils.class, method = "makeShopScreenChoice", requiredModId = "CommunicationMod", optional = true)
     public static class MakeShopScreenChoicePatch {
         @SpirePrefixPatch
         public static SpireReturn addReroll(int choice) {
@@ -135,7 +135,7 @@ public class DiceOfFate extends CustomRelic {
         }
     }
 
-    @SpirePatch(clz = ChoiceScreenUtils.class, method = "getShopScreenChoices")
+    @SpirePatch(clz = ChoiceScreenUtils.class, method = "getShopScreenChoices", requiredModId = "CommunicationMod", optional = true)
     public static class GetShopScreenChoicesPatch {
         @SpirePrefixPatch
         public static SpireReturn addReroll() {
