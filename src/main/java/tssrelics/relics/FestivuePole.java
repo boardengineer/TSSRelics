@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.rooms.CampfireUI;
 import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import java.util.ArrayList;
@@ -79,8 +78,6 @@ public class FestivuePole extends CustomRelic {
                 AbstractCard card = AbstractDungeon.gridSelectScreen.selectedCards
                         .get(0);
                 CardCrawlGame.sound.play("CARD_EXHAUST");
-                AbstractDungeon.topLevelEffects
-                        .add(new PurgeCardEffect(card, (float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2)));
                 AbstractDungeon.player.masterDeck.removeCard(card);
                 AbstractDungeon.transformCard(card, true, AbstractDungeon.miscRng);
                 if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.TRANSFORM && AbstractDungeon.transformedCard != null) {

@@ -24,7 +24,6 @@ hs_err_pid*
 *.lst
 *.properties
 *.iml
-*.xml
 target/classes/img/robot.png
 target/classes/img/reroll.png
 target/classes/img/pole.png
@@ -39,3 +38,5 @@ target/classes/img/venomousscales.png
 target/classes/img/snail.png
 target/classes/img/poison_scale.png
 target/classes/localization/other.json
+.idea/workspace.xml
+.idea/vcs.xml

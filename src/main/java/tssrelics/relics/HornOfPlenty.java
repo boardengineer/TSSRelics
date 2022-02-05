@@ -45,7 +45,10 @@ public class HornOfPlenty extends CustomRelic {
         public static SpireReturn<Boolean> freeToPlayCard(AbstractCard card) {
             AbstractPlayer player = AbstractDungeon.player;
             if (player.hasRelic(ID) && !player.getRelic(ID).grayscale) {
-                if (card.rarity == AbstractCard.CardRarity.RARE) {
+                boolean inHand = AbstractDungeon.player.hand.group.stream()
+                                                                  .anyMatch(handCard -> handCard == card);
+
+                if (card.rarity == AbstractCard.CardRarity.RARE && inHand) {
                     return SpireReturn.Return(true);
                 }
             }
