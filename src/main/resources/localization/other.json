@@ -134,7 +134,7 @@
     "NAME": "Preserved Amber",
     "FLAVOR": "Poor bug never saw it coming.",
     "DESCRIPTIONS": [
-      "All elites start Combat with -2 Strength."
+      "Enemies in Elite rooms lose #b2 #yStrength at the start of combat."
     ]
   },
   "Cheesy Fridge": {
