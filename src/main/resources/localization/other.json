@@ -3,7 +3,7 @@
     "NAME": "Achilles Heel Guard",
     "FLAVOR": "It's fragile, don't let it crack.",
     "DESCRIPTIONS": [
-      "Start each turn with 1 extra energy.  No longer gain this energy if you've taken damage this battle."
+      "If you haven't taken damage this combat, gain [E] at the start of your turn."
     ]
   },
   "Blighted Snail": {
