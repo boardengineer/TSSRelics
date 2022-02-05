@@ -167,9 +167,9 @@
   },
   "Relic Compass": {
     "NAME": "Relic Compass",
-    "FLAVOR": "All the elites are on fire? everything is fine",
+    "FLAVOR": "All the elites are on fire? Everything is fine.",
     "DESCRIPTIONS": [
-      "at the beginning of each turn, gain 1 energy.  All elites gain an [additional] emerald (flaming) buff."
+      "Gain [E] at the start of your turn. NL All Elites gain an [additional] emerald (flaming) buff."
     ]
   },
   "Hotwired Cables": {
