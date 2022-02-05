@@ -202,9 +202,9 @@
   },
   "Yin": {
     "NAME": "Yin",
-    "FLAVOR": "needed for true duality",
+    "FLAVOR": "Needed for true duality",
     "DESCRIPTIONS": [
-      "Whenever you play a skill, gain one strength."
+      "Whenever you play a #ySkill, gain #b1 temporary #yStrength."
     ]
   },
   "Venomous Scales": {
