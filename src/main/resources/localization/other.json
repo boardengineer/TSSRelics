@@ -190,7 +190,7 @@
     "NAME": "Tactical Harness",
     "FLAVOR": "I always wondered where she hid those knives.",
     "DESCRIPTIONS": [
-      "Whenever a card, power, or relic would add shivs to the hand, create 1 additional shiv."
+      "Whenever a card, power, or relic would add #yShivs to the hand, create #b1 additional #yShiv."
     ]
   },
   "Vampire Fang": {
