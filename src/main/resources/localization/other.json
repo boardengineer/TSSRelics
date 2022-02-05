@@ -44,9 +44,9 @@
   },
   "Dice Of Fate": {
     "NAME": "Dice Of Fate",
-    "FLAVOR": "roll them bones.",
+    "FLAVOR": "Roll them bones.",
     "DESCRIPTIONS": [
-      "You can reroll once per shop."
+      "You can reroll the shop's contents once per shop."
     ]
   },
   "Festivus Pole": {
