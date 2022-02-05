@@ -174,9 +174,9 @@
   },
   "Hotwired Cables": {
     "NAME": "Hotwired Cables",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "So hawt",
     "DESCRIPTIONS": [
-      "When an orb is channeled, it is immediately evoked."
+      "When an #yOrb is channeled, it is immediately evoked."
     ]
   },
   "Scales of Justice": {
