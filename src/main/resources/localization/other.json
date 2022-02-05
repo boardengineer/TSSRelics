@@ -123,11 +123,11 @@
   },
   "Paper Bomb": {
     "NAME": "Paper Bomb",
-    "FLAVOR": "It goes boom. Recommended by Galvior.",
+    "FLAVOR": "It goes boom. Suggested by Galvior.",
     "DESCRIPTIONS": [
       "Every time you play #b",
       " #yAttacks in a single turn, deal #b",
-      " Damage to all enemies."
+      " damage to ALL enemies."
     ]
   },
   "Preserved Amber": {
