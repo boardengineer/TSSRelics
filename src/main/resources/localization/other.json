@@ -36,7 +36,7 @@
   },
   "Clerics Golden Helm": {
     "NAME": "Cleric's Golden Helm",
-    "FLAVOR": "It's very shiny, that's how you know its important. suggested by Galvior.",
+    "FLAVOR": "It's very shiny, that's how you know its important. Suggested by Galvior.",
     "DESCRIPTIONS": [
       "Whenever you add a card to your deck, heal #b",
       " HP."
