@@ -139,7 +139,7 @@
   },
   "Cheesy Fridge": {
     "NAME": "Cheesy Fridge",
-    "FLAVOR": "all the food!!!!.",
+    "FLAVOR": "All the food!!!!.",
     "DESCRIPTIONS": [
       "because pickled rick was taken."
     ]
@@ -148,7 +148,7 @@
     "NAME": "Runic Replicator",
     "FLAVOR": "A lot of things are great when they're free.",
     "DESCRIPTIONS": [
-      "At start of combat, choose a card. Add a copy of that card to your hand, it costs 0 this turn."
+      "At start of combat, choose a card in hand. Add a copy of that card to your hand, it costs #b0 this turn."
     ]
   },
   "Solid State Drive": {
