@@ -1,9 +1,16 @@
 {
+  "Achilles Heel Guard": {
+    "NAME": "Achilles Heel Guard",
+    "FLAVOR": "It's fragile, don't let it crack.",
+    "DESCRIPTIONS": [
+      "Start each turn with 1 extra energy.  No longer gain this energy if you've taken damage this battle."
+    ]
+  },
   "Blighted Snail": {
     "NAME": "Blighted Snail",
     "FLAVOR": "You get lost in those smooth curves.",
     "DESCRIPTIONS": [
-      "Each turn deal fib(n) damage to all enemies."
+      "At the end of each turn deal damage that increases each turn by the Fibonacci sequence (0,1,1,2,3,5,8,...)."
     ]
   },
   "Business Contract": {
@@ -128,13 +135,6 @@
     "FLAVOR": "It certainly doesn't smell great!!!!.",
     "DESCRIPTIONS": [
       "At the start of each turn, gain 2 envenom and each monster gains 1 Strength."
-    ]
-  },
-  "Achilles Heel Guard": {
-    "NAME": "Achilles Heel Guard",
-    "FLAVOR": "it's fragile, don't let it crack.",
-    "DESCRIPTIONS": [
-      "Start each turn with 1 extra energy.  No longer gain this energy if you've taken damage this battle."
     ]
   },
   "Runic Replicator": {

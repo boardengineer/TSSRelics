@@ -22,16 +22,16 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
-        BaseMod.addRelic(new Fridge().makeCopy(), RelicType.SHARED);
-        BaseMod.addRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new Fridge().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
 
         BaseMod.addRelic(new Sail().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new FreshWater().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new SneckoSkinBoots().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new ClericsGoldenHelm().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new PaperBomb().makeCopy(), RelicType.SHARED);
-        BaseMod.addRelic(new CircularLogicWidget().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new CircularLogicWidget().makeCopy(), RelicType.SHARED);
 
         BaseMod.addRelic(new AchillesHeelGuard().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new RunicReplicator().makeCopy(), RelicType.SHARED);
@@ -52,11 +52,11 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         BaseMod.addRelic(new HappyFlowerBed().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new FestivuePole().makeCopy(), RelicType.SHARED);
 
-        BaseMod.addRelic(new ComicBook().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new ComicBook().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new BlightedSnail().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new JadeMysticKnot().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new VenomousScales().makeCopy(), RelicType.GREEN);
-        BaseMod.addRelic(new HornOfPlenty().makeCopy(), RelicType.SHARED);
+//        BaseMod.addRelic(new HornOfPlenty().makeCopy(), RelicType.SHARED);
     }
 
     @Override
