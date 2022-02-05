@@ -108,7 +108,7 @@
   },
   "Sail": {
     "NAME": "Ship's Sail",
-    "FLAVOR": "Catches the wind. suggested by bobjoejuan.",
+    "FLAVOR": "Catches the wind. Suggested by bobjoejuan.",
     "DESCRIPTIONS": [
       "At the start of your 4th turn, gain #b",
       " #yBlock."
@@ -118,7 +118,7 @@
     "NAME": "Snecko Skin Boots",
     "FLAVOR": "Poor confusing creature, now losing its skin. suggested by coledot_.",
     "DESCRIPTIONS": [
-      "At the start of each turn +2 str, +2 Dex, -1 str, or -1 Dex, chosen at random."
+      "At the start of each turn, gain #b2 #yStrength, #b2 #yDexterity, #y-1 #yStrength, or #b-1 #yDexterity, chosen at random."
     ]
   },
   "Paper Bomb": {
