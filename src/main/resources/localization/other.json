@@ -155,7 +155,7 @@
     "NAME": "Solid State Drive",
     "FLAVOR": "For the quickest boot times.",
     "DESCRIPTIONS": [
-      "Whenever you evoke an orb, gain 1 strength."
+      "Whenever you evoke an orb, gain #b1 #yStrength."
     ]
   },
   "Snecko Charm": {
