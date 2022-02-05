@@ -181,9 +181,9 @@
   },
   "Scales of Justice": {
     "NAME": "Scales of Justice",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "If the turn is started in wrath, draw 2 cards. If the turn is ended in Calm, retain up to 2 cards."
+      "If the turn is started in #yWrath, draw #b2 cards. If the turn is ended in #yCalm, #yretain up to #b2 cards."
     ]
   },
   "Tactical Harness": {
