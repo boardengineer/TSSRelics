@@ -1,5 +1,6 @@
 package tssrelics.relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -63,7 +64,10 @@ public class DiceOfFate extends CustomRelic {
                 hb.clicked = false;
                 if (isActive()) {
                     AbstractDungeon.shopScreen.init(getColorCards(), getColorlessCards());
-                    CommunicationMod.mustSendGameState = true;
+
+                    if (BaseMod.hasModID("CommunicationMod")) {
+                        CommunicationMod.mustSendGameState = true;
+                    }
                     if (AbstractDungeon.player.hasRelic(ID)) {
                         AbstractDungeon.player.getRelic(ID).grayscale = true;
                     }
