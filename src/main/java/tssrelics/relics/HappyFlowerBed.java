@@ -57,8 +57,6 @@ public class HappyFlowerBed extends CustomRelic {
                 numFlowers = 0;
             }
 
-            System.err.println("we should plant " + numFlowers);
-
             if (numFlowers > 0) {
                 AbstractDungeon.combatRewardScreen.open();
                 AbstractDungeon.combatRewardScreen.rewards.clear();
@@ -141,29 +139,6 @@ public class HappyFlowerBed extends CustomRelic {
 
         public void dispose() {
         }
-    }
-
-    private static void obtainStaggeredHappyFlower() {
-        AbstractRelic flower = new HappyFlower().makeCopy();
-
-        long min = 1000;
-        int best = 0;
-        for (int counter = 0; counter < 3; counter++) {
-            final int compareCounter = counter;
-
-            long numFlowers = AbstractDungeon.player.relics.stream()
-                                                           .filter(relic -> relic.relicId
-                                                                   .equals(HappyFlower.ID) && relic.counter == compareCounter)
-                                                           .count();
-
-            if (numFlowers < min) {
-                min = numFlowers;
-                best = counter;
-            }
-        }
-
-        flower.instantObtain();
-        flower.counter = best;
     }
 
     @SpirePatch(clz = HappyFlower.class, method = "onEquip")

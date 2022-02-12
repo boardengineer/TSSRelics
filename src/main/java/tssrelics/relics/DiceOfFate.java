@@ -65,7 +65,7 @@ public class DiceOfFate extends CustomRelic {
                 if (isActive()) {
                     AbstractDungeon.shopScreen.init(getColorCards(), getColorlessCards());
 
-                    if (BaseMod.hasModID("CommunicationMod")) {
+                    if (BaseMod.hasModID("CommunicationMod:")) {
                         CommunicationMod.mustSendGameState = true;
                     }
                     if (AbstractDungeon.player.hasRelic(ID)) {

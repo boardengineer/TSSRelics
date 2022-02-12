@@ -3,7 +3,7 @@
     "NAME": "Achilles Heel Guard",
     "FLAVOR": "It's fragile, don't let it crack.",
     "DESCRIPTIONS": [
-      "Start each turn with 1 extra energy.  No longer gain this energy if you've taken damage this battle."
+      "If you haven't taken damage this combat, gain [E] at the start of your turn."
     ]
   },
   "Blighted Snail": {
@@ -24,19 +24,19 @@
     "NAME": "Comic Book",
     "FLAVOR": "It's collectible.",
     "DESCRIPTIONS": [
-      "The First colorless card you play each battle is played twice."
+      "The first colorless card you play each combat is played twice."
     ]
   },
   "Circular Logic Widget": {
     "NAME": "Circular Logic Widget",
     "FLAVOR": "George is going insane.",
     "DESCRIPTIONS": [
-      "When obtained, gained bird faced urn and mummfied hand.  Start each combat with master reality, creative ai, and storm"
+      "Upon pickup, obtain #yBird #yFaced #yUrn, #yMummfied #yHand and #yEnchiridion. Start each combat with #yMaster #yReality, #yCreative #yAI, and #yStorm."
     ]
   },
   "Clerics Golden Helm": {
     "NAME": "Cleric's Golden Helm",
-    "FLAVOR": "It's very shiny, that's how you know its important. suggested by Galvior.",
+    "FLAVOR": "It's very shiny, that's how you know its important. Suggested by Galvior.",
     "DESCRIPTIONS": [
       "Whenever you add a card to your deck, heal #b",
       " HP."
@@ -44,21 +44,28 @@
   },
   "Dice Of Fate": {
     "NAME": "Dice Of Fate",
-    "FLAVOR": "roll them bones.",
+    "FLAVOR": "Roll them bones.",
     "DESCRIPTIONS": [
-      "You can reroll once per shop"
+      "You can reroll the shop's contents once per shop."
     ]
   },
   "Festivus Pole": {
     "NAME": "Festivus Pole",
     "FLAVOR": "Great strength to weight ratio.",
     "DESCRIPTIONS": [
-      "You can now transform + upgrade a card at rest sites."
+      "You can now transform a card and upgrade it at rest sites."
+    ]
+  },
+  "Filiform Needle": {
+    "NAME": "Filiform Needle",
+    "FLAVOR": "Don't worry, I'm a professional.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, apply 1 #yMark to all enemies. ALL enemies lose HP equal to their #yMark."
     ]
   },
   "Fresh Water": {
     "NAME": "Fresh Water",
-    "FLAVOR": "Always Hydrate Properly. suggested by ezLo2.",
+    "FLAVOR": "Always Hydrate Properly. Suggested by ezLo2.",
     "DESCRIPTIONS": [
       "Upon pickup, heal #b",
       " HP."
@@ -68,33 +75,40 @@
     "NAME": "Happy Flower Bed",
     "FLAVOR": "They all just keep on smiling.",
     "DESCRIPTIONS": [
-      "You can now plant happy flowers at rest sites, counters will stagger"
+      "You can now plant #yHappy #yFlowers at rest sites, counters will stagger. NL Upon pickup, obtain one #yHappy #yFlower per defeated boss."
     ]
   },
   "Horn Of Plenty": {
     "NAME": "Horn Of Plenty",
     "FLAVOR": "The rich just keep getting richer.",
     "DESCRIPTIONS": [
-      "The first rare card you play each combat is free"
+      "The first rare card you play each combat is free."
     ]
   },
   "Jade Mystic Knot": {
     "NAME": "Jade Mystic Knot",
     "FLAVOR": "Round and round and round it goes.",
     "DESCRIPTIONS": [
-      "Whenever you obtain a relic, gain 2 Max HP."
+      "Whenever you obtain a relic, gain #b2 Max HP."
+    ]
+  },
+  "Noxious Stone": {
+    "NAME": "Noxious Stone",
+    "FLAVOR": "It certainly doesn't smell great!!!!.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain #b2 #yEnvenom and each monster gains #b1 #yStrength."
     ]
   },
   "PrismaticBranch": {
     "NAME": "Prismatic Branch",
     "FLAVOR": "For the spiciest of cheese.",
     "DESCRIPTIONS": [
-      "Whenever you Exhaust a card, add a random card to your hand; no restrictions.  Start Each Battle With Corruption and Master of Reality powers."
+      "Whenever you #yExhaust a card, add a random card to your hand; no restrictions. NL Start each combat with #yCorruption and #yMaster #yof #yReality powers."
     ]
   },
   "Sail": {
     "NAME": "Ship's Sail",
-    "FLAVOR": "Catches the wind. suggested by bobjoejuan.",
+    "FLAVOR": "Catches the wind. Suggested by bobjoejuan.",
     "DESCRIPTIONS": [
       "At the start of your 4th turn, gain #b",
       " #yBlock."
@@ -104,114 +118,100 @@
     "NAME": "Snecko Skin Boots",
     "FLAVOR": "Poor confusing creature, now losing its skin. suggested by coledot_.",
     "DESCRIPTIONS": [
-      "At the start of each turn +2 str, +2 Dex, -1 str, or -1 Dex, chosen at random"
+      "At the start of each turn, gain #b2 #yStrength, #b2 #yDexterity, #y-1 #yStrength, or #b-1 #yDexterity, chosen at random."
     ]
   },
   "Paper Bomb": {
     "NAME": "Paper Bomb",
-    "FLAVOR": "It goes boom. Recommended by Galvior.",
+    "FLAVOR": "It goes boom. Suggested by Galvior.",
     "DESCRIPTIONS": [
       "Every time you play #b",
       " #yAttacks in a single turn, deal #b",
-      " Damage to all enemies."
+      " damage to ALL enemies."
     ]
   },
   "Preserved Amber": {
     "NAME": "Preserved Amber",
     "FLAVOR": "Poor bug never saw it coming.",
     "DESCRIPTIONS": [
-      "All elites start Combat with -2 Strength."
+      "Enemies in Elite rooms lose #b2 #yStrength at the start of combat."
     ]
   },
   "Cheesy Fridge": {
     "NAME": "Cheesy Fridge",
-    "FLAVOR": "all the food!!!!.",
+    "FLAVOR": "All the food!!!!.",
     "DESCRIPTIONS": [
       "because pickled rick was taken."
-    ]
-  },
-  "Noxious Stone": {
-    "NAME": "Noxious Stone",
-    "FLAVOR": "It certainly doesn't smell great!!!!.",
-    "DESCRIPTIONS": [
-      "At the start of each turn, gain 2 envenom and each monster gains 1 Strength."
     ]
   },
   "Runic Replicator": {
     "NAME": "Runic Replicator",
     "FLAVOR": "A lot of things are great when they're free.",
     "DESCRIPTIONS": [
-      "At start of combat, choose a card. Add a copy of that card to your hand, it costs 0 this turn"
+      "At start of combat, choose a card in hand. Add a copy of that card to your hand, it costs #b0 this turn."
     ]
   },
   "Solid State Drive": {
     "NAME": "Solid State Drive",
-    "FLAVOR": "Throw some balls for the gains.",
+    "FLAVOR": "For the quickest boot times.",
     "DESCRIPTIONS": [
-      "Whenever you evoke an orb, gain 1 strength."
+      "Whenever you evoke an orb, gain #b1 #yStrength."
     ]
   },
   "Snecko Charm": {
     "NAME": "Snecko Charm",
     "FLAVOR": "Well, good luck...",
     "DESCRIPTIONS": [
-      "? rooms can now contain elites or rest rooms."
-    ]
-  },
-  "Filiform Needle": {
-    "NAME": "Filiform Needle",
-    "FLAVOR": "Well, good luck...",
-    "DESCRIPTIONS": [
-      "At the start of each turn, apply 1 Mark to all enemies. ALL enemies lose HP equal to their mark."
+      "? rooms can now contain Elites or Rest Sites."
     ]
   },
   "Relic Compass": {
     "NAME": "Relic Compass",
-    "FLAVOR": "All the elites are on fire? everything is fine",
+    "FLAVOR": "All the elites are on fire? Everything is fine.",
     "DESCRIPTIONS": [
-      "at the beginning of each turn, gain 1 energy.  All elites gain an [additional] emerald buff."
+      "Gain [E] at the start of your turn. NL All Elites gain an [additional] emerald (flaming) buff."
     ]
   },
   "Hotwired Cables": {
     "NAME": "Hotwired Cables",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "So hawt",
     "DESCRIPTIONS": [
-      "When an orb is channeled, it is immediately evoked."
+      "When an #yOrb is channeled, it is immediately evoked."
     ]
   },
   "Scales of Justice": {
     "NAME": "Scales of Justice",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "If the turn is started in wrath, draw 2 cards. If the turn is ended in Calm, retain up to 2 cards."
+      "If the turn is started in #yWrath, draw #b2 cards. If the turn is ended in #yCalm, #yretain up to #b2 cards."
     ]
   },
   "Tactical Harness": {
     "NAME": "Tactical Harness",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "I always wondered where she hid those knives.",
     "DESCRIPTIONS": [
-      "Whenever a card or power would add shivs to the hand, create 1 additional shiv"
+      "Whenever a card, power, or relic would add #yShivs to the hand, create #b1 additional #yShiv."
     ]
   },
   "Vampire Fang": {
     "NAME": "Vampire Fang",
-    "FLAVOR": "so hawt",
+    "FLAVOR": "Sure they're fake teeth but the monsters won't know the difference.",
     "DESCRIPTIONS": [
-      "Whenever you play a strike, heal 1 HP."
+      "Whenever you play a #yStrike, heal #b1 HP."
     ]
   },
   "Yin": {
     "NAME": "Yin",
-    "FLAVOR": "needed for true duality",
+    "FLAVOR": "Needed for true duality",
     "DESCRIPTIONS": [
-      "Whenever you play a skill, gain one strength."
+      "Whenever you play a #ySkill, gain #b1 temporary #yStrength."
     ]
   },
   "Venomous Scales": {
     "NAME": "Venomous Scales",
-    "FLAVOR": "eww, what's that smell?",
+    "FLAVOR": "Eww, what's that smell?",
     "DESCRIPTIONS": [
-      "When attacked, apply 2 poison to the attacked."
+      "When attacked, apply #b2 #yPoison to the attacker."
     ]
   }
 }
