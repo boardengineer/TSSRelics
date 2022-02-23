@@ -24,7 +24,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
     public void receiveEditRelics() {
 //        BaseMod.addRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
 //        BaseMod.addRelic(new Fridge().makeCopy(), RelicType.SHARED);
-//        BaseMod.addRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
+        BaseMod.addRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
 
         BaseMod.addRelic(new Sail().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new FreshWater().makeCopy(), RelicType.SHARED);
