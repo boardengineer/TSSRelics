@@ -22,7 +22,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
 
     @Override
     public void receiveEditRelics() {
-//        BaseMod.addRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
+        BaseMod.addRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
 //        BaseMod.addRelic(new Fridge().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
 
@@ -31,7 +31,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         BaseMod.addRelic(new SneckoSkinBoots().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new ClericsGoldenHelm().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new PaperBomb().makeCopy(), RelicType.SHARED);
-//        BaseMod.addRelic(new CircularLogicWidget().makeCopy(), RelicType.SHARED);
+        BaseMod.addRelic(new CircularLogicWidget().makeCopy(), RelicType.SHARED);
 
         BaseMod.addRelic(new AchillesHeelGuard().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new RunicReplicator().makeCopy(), RelicType.SHARED);
