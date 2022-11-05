@@ -42,7 +42,9 @@ public class JadeMysticKnot extends CustomRelic {
         @SpirePrefixPatch
         public static void maybeGainMaxHp(AbstractRelic relic, AbstractPlayer p, int slot, boolean callOnEquip) {
             if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(ID)) {
-                AbstractDungeon.player.increaseMaxHp(HP_GAIN, false);
+                if (callOnEquip) {
+                    AbstractDungeon.player.increaseMaxHp(HP_GAIN, false);
+                }
             }
         }
     }
