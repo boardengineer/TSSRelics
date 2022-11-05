@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class HornOfPlenty extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test5.png");
+    private static final Texture IMAGE = ImageMaster.loadImage("img/hornofplenty.png");
     public static final String ID = "Horn Of Plenty";
 
     public HornOfPlenty() {
