@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class ComicBook extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test1.png");
+    private static final Texture IMAGE = ImageMaster.loadImage("img/comicbook.png");
     public static final String ID = "Comic Book";
 
     public ComicBook() {
