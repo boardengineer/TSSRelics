@@ -6,11 +6,10 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class JadeMysticKnot extends CustomRelic {
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/test4.png");
+    private static final Texture IMAGE = new Texture("img/jademysticknot.png");
     public static final String ID = "Jade Mystic Knot";
     private static final int HP_GAIN = 2;
 
