@@ -10,9 +10,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.MathHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -54,12 +56,20 @@ public class DiceOfFate extends CustomRelic {
 
     public static class RerollStoreChoice {
         public Hitbox hb = new Hitbox(X, Y, REROLL_IMAGE.getWidth(), REROLL_IMAGE.getHeight());
-        public static final float X = 75;
-        public static final float Y = 500;
+        private float rerollButtonScale = Settings.scale;
+        public static final float X = 75 * Settings.scale;
+        public static final float Y = 500 * Settings.scale;
+        private static final float HOVERED_BUTTON_SCALE = 1.25f;
 
         public void update() {
             boolean clicked = hb.clicked;
             this.hb.update();
+            if (!hb.hovered) {
+                rerollButtonScale = MathHelper
+                        .cardScaleLerpSnap(rerollButtonScale, (1.f / HOVERED_BUTTON_SCALE) * Settings.scale);
+            } else {
+                rerollButtonScale = Settings.scale;
+            }
             if (clicked || hb.hovered && InputHelper.justClickedLeft) {
                 hb.clicked = false;
                 if (isActive()) {
@@ -77,7 +87,9 @@ public class DiceOfFate extends CustomRelic {
 
         public void render(SpriteBatch sb) {
             if (isActive()) {
-                sb.draw(REROLL_IMAGE, X, Y);
+                sb.draw(REROLL_IMAGE, X, Y,
+                        REROLL_IMAGE.getWidth() * rerollButtonScale, REROLL_IMAGE
+                                .getHeight() * rerollButtonScale);
             }
         }
     }
