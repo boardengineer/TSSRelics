@@ -186,6 +186,13 @@
       "Gain [E] at the start of your turn. NL All Elites gain an [additional] emerald (flaming) buff."
     ]
   },
+  "Rusted Lockbox": {
+    "NAME": "Rusted Lockbox",
+    "FLAVOR": "What's in the box!?",
+    "DESCRIPTIONS": [
+      "Upon Pickup, obtain a random different character's Starter Relic."
+    ]
+  },
   "Scales of Justice": {
     "NAME": "Scales of Justice",
     "FLAVOR": "",

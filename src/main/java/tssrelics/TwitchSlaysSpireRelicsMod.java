@@ -96,6 +96,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         addExperimentalRelic(new CircularLogicWidget().makeCopy(), RelicType.SHARED);
         addExperimentalRelic(new PrismaticBranch().makeCopy(), RelicType.SHARED);
         addExperimentalRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
+        addExperimentalRelic(new RustedLockbox().makeCopy(), RelicType.SHARED);
     }
 
     private static void addExperimentalRelic(AbstractRelic relic, RelicType relicType) {
