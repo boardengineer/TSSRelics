@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.cards.purple.Blasphemy;
 import com.megacrit.cardcrawl.cards.red.SearingBlow;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.powers.CorruptionPower;
 import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theVacant.cards.Attacks.SoulBarrage;
@@ -53,7 +52,6 @@ public class PrismaticBranch extends CustomRelic {
     public void atBattleStart() {
         this.grayscale = false;
         this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MasterRealityPower(AbstractDungeon.player), 1, true));
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new CorruptionPower(AbstractDungeon.player), 1, true));
     }
 
     public String getUpdatedDescription() {
