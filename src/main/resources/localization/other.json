@@ -214,6 +214,13 @@
       "Every time you attack gain 1 gold."
     ]
   },
+  "Tungsten Shield": {
+    "NAME": "Tungsten Shield",
+    "FLAVOR": "don't let your guard down.",
+    "DESCRIPTIONS": [
+      "Whenever you would block damage, if you would have block left over block 2 more."
+    ]
+  },
   "Vampire Fang": {
     "NAME": "Vampire Fang",
     "FLAVOR": "Sure they're fake teeth but the monsters won't know the difference.",
