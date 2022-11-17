@@ -35,4 +35,9 @@ public class ThiefGLoves extends CustomRelic {
             this.addToBot(new GainGoldAction(1));
         }
     }
+
+    @Override
+    public String getUpdatedDescription() {
+        return this.DESCRIPTIONS[0];
+    }
 }

@@ -4,7 +4,6 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.relics.*;
 
@@ -21,8 +20,7 @@ public class RustedLockbox extends CustomRelic {
         put(AbstractPlayer.PlayerClass.WATCHER, PureWater.ID);
     }};
 
-
-    private static final Texture IMAGE = ImageMaster.loadImage("images/relics/lives.png");
+    private static final Texture IMAGE = new Texture("img/lockbox.png");
     public static final String ID = "Rusted Lockbox";
 
     public RustedLockbox() {
@@ -39,5 +37,10 @@ public class RustedLockbox extends CustomRelic {
         String id = relicIds.get(AbstractDungeon.relicRng.random(relicIds.size() - 1));
         AbstractRelic relic = RelicLibrary.getRelic(id).makeCopy();
         relic.instantObtain(AbstractDungeon.player, AbstractDungeon.player.relics.size(), true);
+    }
+
+    @Override
+    public String getUpdatedDescription() {
+        return this.DESCRIPTIONS[0];
     }
 }

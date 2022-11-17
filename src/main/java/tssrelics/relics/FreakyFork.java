@@ -47,4 +47,9 @@ public class FreakyFork extends CustomRelic {
             }
         }
     }
+
+    @Override
+    public String getUpdatedDescription() {
+        return this.DESCRIPTIONS[0];
+    }
 }
