@@ -59,6 +59,9 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         // Stream only
         BaseMod.addRelic(new HornOfPlenty().makeCopy(), RelicType.SHARED);
         BaseMod.addRelic(new ComicBook().makeCopy(), RelicType.SHARED);
+
+        BaseMod.addRelic(new FreakyFork().makeCopy(), RelicType.SHARED);
+        BaseMod.addRelic(new ThiefGLoves().makeCopy(), RelicType.SHARED);
     }
 
     @Override

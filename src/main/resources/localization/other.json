@@ -63,6 +63,13 @@
       "At the start of each turn, apply 1 #yMark to all enemies. ALL enemies lose HP equal to their #yMark."
     ]
   },
+  "Freaky Fork": {
+    "NAME": "Freaky Fork",
+    "FLAVOR": "Flavor Text Pending.",
+    "DESCRIPTIONS": [
+      "Powers have a 50% chance of adding another copy into your discard pile when played."
+    ]
+  },
   "Fresh Water": {
     "NAME": "Fresh Water",
     "FLAVOR": "Always Hydrate Properly. Suggested by ezLo2.",
@@ -83,6 +90,13 @@
     "FLAVOR": "The rich just keep getting richer.",
     "DESCRIPTIONS": [
       "The first rare card you play each combat is free."
+    ]
+  },
+  "Hotwired Cables": {
+    "NAME": "Hotwired Cables",
+    "FLAVOR": "So hawt",
+    "DESCRIPTIONS": [
+      "When an #yOrb is channeled, it is immediately evoked."
     ]
   },
   "Jade Mystic Knot": {
@@ -172,13 +186,6 @@
       "Gain [E] at the start of your turn. NL All Elites gain an [additional] emerald (flaming) buff."
     ]
   },
-  "Hotwired Cables": {
-    "NAME": "Hotwired Cables",
-    "FLAVOR": "So hawt",
-    "DESCRIPTIONS": [
-      "When an #yOrb is channeled, it is immediately evoked."
-    ]
-  },
   "Scales of Justice": {
     "NAME": "Scales of Justice",
     "FLAVOR": "",
@@ -191,6 +198,13 @@
     "FLAVOR": "I always wondered where she hid those knives.",
     "DESCRIPTIONS": [
       "Whenever a card, power, or relic would add #yShivs to the hand, create #b1 additional #yShiv."
+    ]
+  },
+  "Thief Gloves": {
+    "NAME": "Thief Gloves",
+    "FLAVOR": "Clever blurb about stealing money.",
+    "DESCRIPTIONS": [
+      "Every time you attack gain 1 gold."
     ]
   },
   "Vampire Fang": {
