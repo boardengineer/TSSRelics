@@ -41,6 +41,9 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
     public static void initialize() {
         BaseMod.subscribe(new TwitchSlaysSpireRelicsMod());
         Properties defaults = new Properties();
+
+        defaults.put(TwitchSlaysSpireRelicsModPanel.EXPERIMENTAL_RELICS_KEY, true);
+
         try {
             modConfig = new SpireConfig("TwitchSlaysSpireRelicsMod", "config", defaults);
         } catch (IOException e) {

@@ -38,6 +38,7 @@ public class FreakyFork extends CustomRelic {
 
                     if (targetCard.type == AbstractCard.CardType.POWER && AbstractDungeon.cardRandomRng
                             .randomBoolean()) {
+                        AbstractDungeon.player.getRelic(ID).flash();
                         AbstractDungeon.actionManager
                                 .addToBottom(new MakeTempCardInDiscardAction(targetCard
                                         .makeStatEquivalentCopy(), 1));
