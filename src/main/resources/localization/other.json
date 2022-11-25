@@ -78,6 +78,13 @@
       " HP."
     ]
   },
+  "Green Skull": {
+    "NAME": "Green Skull",
+    "FLAVOR": "Think Red Skull, but more Green like money.",
+    "DESCRIPTIONS": [
+      "While your HP is at or below #b50%, you have #b3 additional Dexterity."
+    ]
+  },
   "Happy Flower Bed": {
     "NAME": "Happy Flower Bed",
     "FLAVOR": "They all just keep on smiling.",
@@ -118,6 +125,13 @@
     "FLAVOR": "For the spiciest of cheese.",
     "DESCRIPTIONS": [
       "Whenever you #yExhaust a card, add a random card to your hand; no restrictions. NL Start each combat with #yCorruption and #yMaster #yof #yReality powers."
+    ]
+  },
+  "Rate Limiter": {
+    "NAME": "Rate Limiter",
+    "FLAVOR": "Sometimes in life you just have to slow down.",
+    "DESCRIPTIONS": [
+      "Start Each Combat with #b2 Focus and #b1 fewer Orb slot."
     ]
   },
   "Sail": {
@@ -241,5 +255,12 @@
     "DESCRIPTIONS": [
       "When attacked, apply #b2 #yPoison to the attacker."
     ]
-  }
+  },
+  "Yoga Mat": {
+  "NAME": "Yoga Mat",
+  "FLAVOR": "Sit on it for a while to experience serenity.",
+  "DESCRIPTIONS": [
+    "You can now meditate at rest sites up to 3 times, each time you meditate generates 1 mantra every turn in battle."
+  ]
+}
 }

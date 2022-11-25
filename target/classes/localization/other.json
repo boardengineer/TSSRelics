@@ -63,12 +63,26 @@
       "At the start of each turn, apply 1 #yMark to all enemies. ALL enemies lose HP equal to their #yMark."
     ]
   },
+  "Freaky Fork": {
+    "NAME": "Freaky Fork",
+    "FLAVOR": "Flavor Text Pending.",
+    "DESCRIPTIONS": [
+      "Powers have a 50% chance of adding another copy into your discard pile when played."
+    ]
+  },
   "Fresh Water": {
     "NAME": "Fresh Water",
     "FLAVOR": "Always Hydrate Properly. Suggested by ezLo2.",
     "DESCRIPTIONS": [
       "Upon pickup, heal #b",
       " HP."
+    ]
+  },
+  "Green Skull": {
+    "NAME": "Green Skull",
+    "FLAVOR": "Think Red Skull, but more Green like money.",
+    "DESCRIPTIONS": [
+      "While your HP is at or below #b50%, you have #b3 additional Dexterity."
     ]
   },
   "Happy Flower Bed": {
@@ -83,6 +97,13 @@
     "FLAVOR": "The rich just keep getting richer.",
     "DESCRIPTIONS": [
       "The first rare card you play each combat is free."
+    ]
+  },
+  "Hotwired Cables": {
+    "NAME": "Hotwired Cables",
+    "FLAVOR": "So hawt",
+    "DESCRIPTIONS": [
+      "When an #yOrb is channeled, it is immediately evoked."
     ]
   },
   "Jade Mystic Knot": {
@@ -104,6 +125,13 @@
     "FLAVOR": "For the spiciest of cheese.",
     "DESCRIPTIONS": [
       "Whenever you #yExhaust a card, add a random card to your hand; no restrictions. NL Start each combat with #yCorruption and #yMaster #yof #yReality powers."
+    ]
+  },
+  "Rate Limiter": {
+    "NAME": "Rate Limiter",
+    "FLAVOR": "Sometimes in life you just have to slow down.",
+    "DESCRIPTIONS": [
+      "Start Each Combat with #b2 Focus and #b1 fewer Orb slot."
     ]
   },
   "Sail": {
@@ -172,11 +200,11 @@
       "Gain [E] at the start of your turn. NL All Elites gain an [additional] emerald (flaming) buff."
     ]
   },
-  "Hotwired Cables": {
-    "NAME": "Hotwired Cables",
-    "FLAVOR": "So hawt",
+  "Rusted Lockbox": {
+    "NAME": "Rusted Lockbox",
+    "FLAVOR": "What's in the box!?",
     "DESCRIPTIONS": [
-      "When an #yOrb is channeled, it is immediately evoked."
+      "Upon Pickup, obtain a random different character's Starter Relic."
     ]
   },
   "Scales of Justice": {
@@ -191,6 +219,20 @@
     "FLAVOR": "I always wondered where she hid those knives.",
     "DESCRIPTIONS": [
       "Whenever a card, power, or relic would add #yShivs to the hand, create #b1 additional #yShiv."
+    ]
+  },
+  "Thief Gloves": {
+    "NAME": "Thief Gloves",
+    "FLAVOR": "Clever blurb about stealing money.",
+    "DESCRIPTIONS": [
+      "Every time you attack gain 1 gold."
+    ]
+  },
+  "Tungsten Shield": {
+    "NAME": "Tungsten Shield",
+    "FLAVOR": "don't let your guard down.",
+    "DESCRIPTIONS": [
+      "Whenever you would block damage, if you would have block left over block 2 more."
     ]
   },
   "Vampire Fang": {
@@ -213,5 +255,12 @@
     "DESCRIPTIONS": [
       "When attacked, apply #b2 #yPoison to the attacker."
     ]
-  }
+  },
+  "Yoga Mat": {
+  "NAME": "Yoga Mat",
+  "FLAVOR": "Sit on it for a while to experience serenity.",
+  "DESCRIPTIONS": [
+    "You can now meditate at rest sites up to 3 times, each time you meditate generates 1 mantra every turn in battle."
+  ]
+}
 }

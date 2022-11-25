@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import tssrelics.relics.*;
+import tssrelics.states.GreenSkullState;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -54,6 +55,11 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
     @Override
     public void receivePostInitialize() {
         PrismaticBranch.initializeCardPools();
+
+        if (BaseMod.hasModID("SaveStateMod:")) {
+            GreenSkullState.addToStateFactory();
+        }
+
         BaseMod.registerModBadge(ImageMaster
                 .loadImage("Icon.png"), "TwitchSlaysSpire Relic Mod", "Board Engineer", "Plays the Battle for yourself", new TwitchSlaysSpireRelicsModPanel());
     }
@@ -101,6 +107,9 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         addExperimentalRelic(new NoxiousStone().makeCopy(), RelicType.SHARED);
         addExperimentalRelic(new RustedLockbox().makeCopy(), RelicType.SHARED);
         addExperimentalRelic(new TungstenShield().makeCopy(), RelicType.SHARED);
+        addExperimentalRelic(new RateLimiter().makeCopy(), RelicType.BLUE);
+        addExperimentalRelic(new GreenSkull().makeCopy(), RelicType.GREEN);
+        addExperimentalRelic(new YogaMat().makeCopy(), RelicType.PURPLE);
     }
 
     private static void addExperimentalRelic(AbstractRelic relic, RelicType relicType) {
