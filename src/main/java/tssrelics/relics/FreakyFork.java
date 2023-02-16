@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import savestate.fastobjects.actions.UpdateOnlyUseCardAction;
 
 public class FreakyFork extends CustomRelic {
     private static final Texture IMAGE = new Texture("img/fork.png");
@@ -35,6 +36,30 @@ public class FreakyFork extends CustomRelic {
                 if (duration == 0.15F) {
                     AbstractCard targetCard = ReflectionHacks
                             .getPrivate(useCardAction, UseCardAction.class, "targetCard");
+
+                    if (targetCard.type == AbstractCard.CardType.POWER && AbstractDungeon.cardRandomRng
+                            .randomBoolean()) {
+                        AbstractDungeon.player.getRelic(ID).flash();
+                        targetCard.resetAttributes();
+                        AbstractDungeon.actionManager
+                                .addToBottom(new MakeTempCardInDiscardAction(targetCard
+                                        .makeStatEquivalentCopy(), 1));
+                    }
+                }
+            }
+        }
+    }
+
+    @SpirePatch(clz = UpdateOnlyUseCardAction.class, method = "update", optional = true, requiredModId = "SaveStateMod")
+    public static class MaybeDupePowerPatch2 {
+        @SpirePrefixPatch
+        public static void maybeDupePower(UpdateOnlyUseCardAction useCardAction) {
+            if (AbstractDungeon.player.hasRelic(ID)) {
+                float duration = ReflectionHacks
+                        .getPrivate(useCardAction, AbstractGameAction.class, "duration");
+                if (duration == 0.15F) {
+                    AbstractCard targetCard = ReflectionHacks
+                            .getPrivate(useCardAction, UpdateOnlyUseCardAction.class, "targetCard");
 
                     if (targetCard.type == AbstractCard.CardType.POWER && AbstractDungeon.cardRandomRng
                             .randomBoolean()) {

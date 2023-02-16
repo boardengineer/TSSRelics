@@ -110,6 +110,7 @@ public class TwitchSlaysSpireRelicsMod implements PostInitializeSubscriber, Edit
         addExperimentalRelic(new RateLimiter().makeCopy(), RelicType.BLUE);
         addExperimentalRelic(new GreenSkull().makeCopy(), RelicType.GREEN);
         addExperimentalRelic(new YogaMat().makeCopy(), RelicType.PURPLE);
+        addExperimentalRelic(new SupplyCrate().makeCopy(), RelicType.SHARED);
     }
 
     private static void addExperimentalRelic(AbstractRelic relic, RelicType relicType) {
