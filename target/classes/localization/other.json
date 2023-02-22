@@ -214,6 +214,13 @@
       "If the turn is started in #yWrath, draw #b2 cards. If the turn is ended in #yCalm, #yretain up to #b2 cards."
     ]
   },
+  "Supply Crate": {
+    "NAME": "Supply Crate",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Upon pickup, Obtain either Prismatic shard or A boss Relic from a different class from [Black Blood, Ring of the Serpent, Holy Water, or Frozen Core] Selected Randomly."
+    ]
+  },
   "Tactical Harness": {
     "NAME": "Tactical Harness",
     "FLAVOR": "I always wondered where she hid those knives.",
