@@ -120,6 +120,13 @@
       "At the start of each turn, gain #b2 #yEnvenom and each monster gains #b1 #yStrength."
     ]
   },
+  "TopMask": {
+    "NAME": "Top Mask",
+    "FLAVOR": "You can't read this.",
+    "DESCRIPTIONS": [
+      "The first chest you open will contain unceasing top."
+    ]
+  },
   "PrismaticBranch": {
     "NAME": "Prismatic Branch",
     "FLAVOR": "For the spiciest of cheese.",
